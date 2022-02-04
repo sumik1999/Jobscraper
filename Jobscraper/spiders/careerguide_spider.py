@@ -15,11 +15,6 @@ class CareerguideSpider(scrapy.Spider):
             yield scrapy.Request(url=url, headers=headers, callback=self.parse)
 
     def parse(self, response):
-        page = response.url.split("/")[-1]
-        filename = f'{page}.html'
-        with open(filename, 'wb') as f:
-            f.write(response.body)
-        self.log(f'Saved file {filename}')
 
         header = response.css("div.c-body h2.c-font-bold a::text").getall()
         ul_objects = response.css("div.c-body div.col-md-4 ul")
