@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'Jobscraper.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 DOWNLOAD_DELAY = 3
-CONCURRENT_REQUESTS_PER_DOMAIN = 2
+CONCURRENT_REQUESTS_PER_DOMAIN = 1
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

@@ -3,6 +3,7 @@ from ..items import JobscraperItem
 
 
 class CareerguideSpider(scrapy.Spider):
+    """ This is the career guide spider which populates career.json with category and subcategory data"""
     name = "career"
 
     def start_requests(self):

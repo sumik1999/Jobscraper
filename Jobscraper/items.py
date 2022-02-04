@@ -7,7 +7,7 @@ import scrapy
 
 
 class LinkedinscraperItem(scrapy.Item):
-    title = scrapy.Field()
+    job_designation = scrapy.Field()
     company = scrapy.Field()
     location = scrapy.Field()
 
